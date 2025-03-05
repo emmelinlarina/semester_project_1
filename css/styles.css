@@ -1,0 +1,756 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+html {
+    font-family: poppins, sans-serif;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+/* navbar */
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    padding: 12px 50px;
+    color: rgb(0, 0, 0);
+    list-style: none;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+padding-left: 30px;
+}
+
+.menu li a {
+display: inline-block;
+text-decoration: none;
+text-align: left;
+transition: 0.15s ease-in-out;
+position: relative;
+text-transform: uppercase;
+color: rgb(0, 0, 0);
+}
+
+/* decoration nav */
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transition: 0.15s ease-in-out;
+    
+}
+
+/* hamburger */
+
+.open-menu , .close-menu {
+    position: absolute;
+    cursor: pointer;
+    color: black;
+    font-size: 1.5rem;
+    display: none;
+    
+}
+
+.open-menu {
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%);
+    
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+#check {display: none;}
+
+@media (max-width: 645px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #B6E1F4;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+    .menu li a {
+        padding: 10px; 
+        font-size: 1.5rem;
+        
+    }
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+
+    .navbar {
+        display: flex;
+        width: 100%;
+        padding: 25px 55px;
+    }
+
+    .logo {
+        flex-grow: 1;
+        text-align: center;
+        width: auto;  
+        max-width: 100%;
+    }
+
+}
+
+/* nav logo img */
+
+.logo img {width: 100px;
+    flex-direction: column;
+}
+
+
+
+
+/*  Main picture  */
+
+.explore img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* Explore with us */ 
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+
+.explore-wu {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #C6D6F4;
+    font-size: 0.6rem;
+    width: 100%;
+    border-radius: 0  0 10px 10px ;
+}
+
+.explore-wu h1 {
+    font-family: poppins;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+}
+
+
+
+
+/* information buttons */
+
+.info-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.openinghours-btn {
+    cursor: pointer;
+    font-size: 0.75rem;
+    letter-spacing: 0.4px;
+    font-family: poppins;
+    font-weight: 600;
+    background-color: rgb(166, 144, 255, 0.5);
+    padding: 40px 30px;
+    border: none;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.events-btn {
+    cursor: pointer;
+    font-size: 0.75rem;
+    letter-spacing: 0.4px;
+    font-family: poppins;
+    font-weight: 600;
+    background-color: rgb(220, 120, 255, 0.5);
+    padding: 40px 25px;
+    border: none;
+    border-radius: 50%;
+    margin: 10px 0 50px;
+}
+
+
+
+/* Exhibition: Launchpad to the stars */  
+
+.exhibitions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.exhibitions-txt {
+    border-radius: 0  0 10px 10px ;
+}
+
+.exhibitions h2 {
+    display: flex;
+    justify-content: center;
+    background-color: #C6D6F4;
+    font-size: 0.9rem;
+    font-family: unbounded;
+    padding: 15px;
+    width: 100%;
+}
+
+/* img */
+
+.exhibitions img {
+    display: block;
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+.exhibitions-txt, .exhibitions h5 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #C6D6F4;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 10px;
+    line-height: 25px;
+    letter-spacing: 0.25px;
+}
+
+
+/* discover */
+
+.discover {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 70%;
+    margin-bottom: 60px;
+}
+
+.discover-btn {
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-family: poppins;
+    font-weight: bold;
+    padding: 2px 5px;
+    border: none;
+    background-color: transparent;
+    margin: 10px;
+}
+
+/* Rob the robot */
+
+.rob p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+
+/* Rob img */
+.rob img {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+
+
+/* Rob ticket */
+
+.tickets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tickets-btn {
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: unbounded, poppins;
+    background-color: rgb(166, 144, 255, 0.5);
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    margin: 45px 0 80px;
+}
+
+/* about us */
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-us h1 {
+    padding: 10px 0 25px;
+    font-family: unbounded;
+    font-size: 1.2rem;
+}
+
+.about-us p {
+    padding: 20px;
+    font-size: 0.75rem;
+    line-height: 20px;
+    background-color: rgba(191, 182, 244, 0.521);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.about-us img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+
+
+
+/* Location */
+
+.location-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-btn {
+    padding: 8px 40px;
+    margin: 20px 0 20px 0;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 300;
+    background-color: rgb(158, 199, 229, 0.4);
+    border: none;
+    border-radius: 15px;
+}
+
+.location-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.65rem;
+    padding: 5px;
+}
+
+/* come visit! */
+
+.come-visit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 60px 0 40px;
+    gap: 10px;
+    font-size: 0.8rem;
+}
+
+.come-visit img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+
+
+
+
+
+/* Tablet - desktop  */ 
+
+
+@media (min-width: 830px) and (max-width: 1024px) {
+
+    .exhibitions img {
+        max-width: 1024px;
+    }
+
+
+  .rob img {
+        max-width: 500px;
+    }
+
+
+
+   .about-us p {
+    padding: 28px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+   }
+
+    
+
+}
+
+
+
+/* Laptop - 4k */
+
+
+@media (min-width: 1024px) and (max-width: 2560px) {
+
+
+    /* Explore with us */ 
+
+
+
+
+    .explore-wu {
+        margin-top: 50px;
+        padding: 30px;
+        font-size: 0.7rem;
+        width: 55%;
+        border-radius: 5px 40px ;
+    }
+    
+    .explore-wu h1 {
+        font-family: unbounded;
+
+    }
+
+    /* Buttons */ 
+
+
+    .info-buttons {
+
+     margin: 80px;
+     gap: 80px;
+    }
+    
+
+    .openinghours-btn  {
+        font-size: 1.2rem;
+        padding: 60px 50px;
+
+    }
+    
+    .events-btn {
+        font-size: 1.2rem;
+        padding: 55px 35px;
+
+    }
+
+    /*Exhibitions*/ 
+
+
+    .exhibitions h2 {
+
+        font-size: 1.2rem;
+        font-family: unbounded;
+        padding: 25px;
+        border-radius: 10px 10px 0  0 ;
+    }
+
+    .exhibitions img {
+        max-width: 1024px;
+    }
+    
+    .exhibitions-txt, .exhibitions h5 {
+       
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+
+    /* Discover button */
+    
+    .discover {
+        margin-left: 80%;
+    }
+    
+    .discover-btn {
+        font-size: 0.9rem;
+        padding: 5px;
+        margin: 20px;
+    }
+
+    /* Rob the Robot */ 
+
+    .rob p {
+
+        padding: 40px;
+        font-size: 1rem;
+    }
+    
+    
+    .rob img {
+        max-width: 800px;
+        height: auto;
+    }
+
+
+    .tickets {
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    .tickets-btn {
+        font-size: 0.8rem;
+        padding: 15px 55px;
+        margin: 35px;
+    }
+    
+
+    /* About us */ 
+
+    .about-us h1 {
+        
+        border-radius: 20px 20px 0  0 ;
+        font-size: 1.5rem;
+    }
+    
+    
+    .about-us p {
+        width: 500px;
+        line-height: 25px;
+        padding: 20px;
+        font-size: 0.9rem;
+        
+        border-radius: 20px ;
+    }
+    
+
+
+     /* Location  */
+
+    .location-icon {
+        margin-top: 60px;
+    }
+
+    .location-info p {
+        padding-top: 20px;
+        font-size: 0.85rem;
+    }
+
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px 20px 25px; /* change this after */
+    border: 125px;
+    font-size: 0.8rem;
+    line-height: 18px;
+    background: #C6D6F4;
+    color: black;
+}
+
+.row {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column; /* change to flex wrap in media */
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.col img {
+    max-width: 100%;
+    width: 150px;
+    padding: 0 0 0 0;
+}
+
+
+col {
+    padding: 10px 10px;
+    color: black;
+} 
+
+.col h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} 
+
+.col h3 {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    position: relative;
+}
+
+.col h5 {
+    font-size: 0.8rem;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.col ul li {
+    list-style: none;
+    line-height: 30px;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.col li a {
+    color: black;
+    text-decoration: none;
+}
+
+.col p {
+    line-height: 25px;
+}
+
+.col h5 {
+    margin: 12px 0 25px;
+    font-size: 0.75rem;
+}
+
+form {
+    padding-bottom: 5px;
+    display: flex;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-bottom: 15px;
+    width: 270px;
+}
+
+form input {
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+.col a:hover {
+    font-weight: 600;
+}
+
+.social-icons {
+    font-size: 1.15rem;
+}
+
+@media (min-width: 1000px) and (max-width: 2560px) {
+    
+    footer {
+        
+        padding: 40px 50px 25px; /* change this after */
+        font-size: 0.7rem;
+    }
+    
+
+    .row {
+        width: 100%;
+        flex-direction: row;
+    }
+     
+    .col, .col h5, .col ul li  {
+        font-size: 0.75rem;
+    }
+
+    .col h3 {
+        font-size: 0.85rem;
+    }
+
+
+    form input {
+        width: 90%;
+
+    }
+
+ }
+
