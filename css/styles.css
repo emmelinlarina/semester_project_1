@@ -198,6 +198,7 @@ color: rgb(0, 0, 0);
     align-items: center;
     margin-bottom: 20px;
     margin-top: 20px;
+    text-decoration: none;
 }
 
 .openinghours-btn {
@@ -236,6 +237,7 @@ color: rgb(0, 0, 0);
     align-items: center;
     width: fit-content;
     margin: 0 auto;
+    text-decoration: none;
 }
 
 .exhibitions-txt {
@@ -279,6 +281,7 @@ color: rgb(0, 0, 0);
     padding: 10px;
     line-height: 25px;
     letter-spacing: 0.25px;
+    text-decoration: none;
 }
 
 
