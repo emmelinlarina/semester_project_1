@@ -7,13 +7,6 @@ article p {
     letter-spacing: 0.1px; line-height: 26px;
 }
 
-.heading {
-    font-family: unbounded; font-size: 0.85rem;
-    text-align: center;
-    background-color: #C6D6F4;
-    padding: 20px 12px 20px;
-}
-
 .supportus {
     display: flex; flex-direction: column; text-align: left; align-items: start;
     padding: 0 15px 5px 15px;

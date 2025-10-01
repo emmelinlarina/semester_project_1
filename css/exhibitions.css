@@ -5,13 +5,6 @@
 
 img { display: block; max-width: 100%; height: auto; object-fit: cover; margin: 0 auto; }  
 
-/* HEADING */
-
-.heading {
-    font-family: unbounded; font-size: 0.8rem;
-    padding: 20px 12px 20px; text-align: center;
-    background-color: #C6D6F4;
-}
 
 /* Shared images */
 
