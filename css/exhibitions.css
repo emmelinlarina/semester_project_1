@@ -1,314 +1,172 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
 
+/* Shared patterns */
+
+img { display: block; max-width: 100%; height: auto; object-fit: cover; margin: 0 auto; }  
 
 /* HEADING */
 
 .heading {
-    font-family: unbounded;
-    text-align: center;
-    font-size: 0.8rem;
+    font-family: unbounded; font-size: 0.8rem;
+    padding: 20px 12px 20px; text-align: center;
     background-color: #C6D6F4;
-    padding: 20px 12px 20px;
 }
 
+/* Shared images */
+
+.event-header img,
+.event-invitation img, 
+.rob img, 
+.upcoming img, 
+.donate img {
+    display: block; 
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
 
 /* Main */
 
 .event {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 1024px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 20px;
-    object-fit: contain;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center; text-align: center;
+    width: 1024px; margin: 0 auto; padding: 20px;
 }
 
 article p {
     padding: 8px 0;
-    font-size: 0.75rem;
-    letter-spacing: 0.1px;
-    line-height: 24px;
-    font-weight: 400; 
+    font-size: 0.75rem; font-weight: 400; 
+    letter-spacing: 0.1px; line-height: 24px;
 }
 
-article.event {
-    max-width: 100%;
-    width: fit-content;
-    margin: 0 auto;
-    text-align: left;
-}
+article.event { max-width: 100%; width: fit-content; margin: 0 auto; text-align: left; }
 
 /* Launchpad to the stars: */
 
 .event-header {
     font-size: 0.65rem;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    width: 100%;
-    font-family: unbounded;
+    justify-content: center; align-items: center; text-align: left;
+    width: 100%; font-family: unbounded;
 }
 
-.event-header h2 {
-    padding: 35px 0 15px;
-    line-height: 28px;
-    letter-spacing: 0.5px;
-}
+.event-header h2 { padding: 35px 0 15px; line-height: 28px; letter-spacing: 0.5px; }
 
 .event-header h5 {
-    font-size: 0.8rem;
-    font-weight: 600;
-    font-family: poppins;
-    line-height: 22px;
-    letter-spacing: 0.5px;
-    padding: 8px 0;
+    font-size: 0.8rem; font-weight: 600; font-family: poppins; 
+    line-height: 22px; letter-spacing: 0.5px; padding: 8px 0;
 }
-
 
 /* event img */
 
-.event-header img {
-    display: block;
-    max-width: 100%;
-    width: 1024px;
-    height: auto;
-    object-fit: cover;
-    margin: 0 auto;
-}
+.event-header img { width: 1024px; }
 
 .event-invitation {
-    display: flex;
-    flex-direction: column;
+    display: flex; flex-direction: column;
     font-size: 0.75rem;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+    justify-content: center; align-items: center; text-align: left;
 }
 
-.event-invitation img {
-    display: block;
-    max-width: 100%;
-    width: 500px;
-    height: auto;
-    object-fit: cover;
-    margin: 0 auto;
-}
+.event-invitation img { width: 500px; }
 
-.event-description, .event-invitation, .event-footer {
-    max-width: 1024px;
-}
-
+.event-description, .event-invitation, .event-footer { max-width: 1024px; }
 
 /* event tickets */
 
 .ticket-button {
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: unbounded, poppins;
-    background-color: rgb(166, 144, 255, 0.5);
-    padding: 15px 25px;
-    border: none;
-    border-radius: 15px;
-    margin: 25px;
+    cursor: pointer; font-size: 1rem; font-weight: 500; font-family: unbounded, poppins;
+    background-color: rgb(166, 144, 255, 0.5); padding: 15px 25px;
+    border: none; border-radius: 15px; margin: 25px;
 }
 
-
-.event-description {
-    font-size: 0.8rem;
-}
+.event-description { font-size: 0.8rem; }
 
 /* footer */
 
 .event-footer {
-    font-size: 0.85rem;
-    line-height: 24px;
-    padding: 10px;
-    font-family: poppins;
-    font-weight: 500;
+    font-size: 0.85rem; font-family: poppins; font-weight: 500;
+    line-height: 24px; padding: 10px;
 }
 
-.event-footer p {
-    padding: 5px;
-}
+.event-footer p { padding: 5px; }
 
 /* ROB */
 
 .rob {
-    display: flex;
-    flex-direction: column;
+    display: flex; flex-direction: column;
     font-size: 0.8rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: center; align-items: center; text-align: center;
 }
 
-.rob img {
-    display: block;
-    max-width: 100%;
-    width: 500px;
-    height: auto;
-    object-fit: cover;
-    margin: 0 auto;
-    padding: 15px 0;
-}
-
-
-
-
-
-
+.rob img { width: 500px; padding: 15px 0; }
 
 /* SPECIAL */
 
 .upcoming  {
-    max-width: 1024px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
+    display: flex; flex-direction: column;
+    max-width: 1024px; margin: 0 auto; padding: 15px;
+    align-items: center; justify-content: center; text-align: left;
 }
 
-.upcoming {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    text-align: left;
-}
+.upcoming p { font-size: 0.75rem; }
 
-.upcoming p {
-    font-size: 0.75rem;
-}
-
-.upcoming img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin: 0 auto;
-    max-width: 1024px;
-}
-
+.upcoming img { max-width: 1024px; }
 
 .heading-upcoming {
-    font-size: 0.85rem;
+    font-size: 0.85rem; font-family: unbounded;
     margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    font-family: unbounded;
-    padding: 10px;
+    text-align: left; padding: 10px;
 }
 
-.heading-upcoming h1 {
-    padding: 12px 0;
-}
-
+.heading-upcoming h1 { padding: 12px 0; }
 .heading-upcoming h3 {
-    background-color: rgb(182, 225, 244, 0.5);
-    text-align: left;
-    padding: 5px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    width: 70px;
-    border-radius: 10px;
+    background-color: rgb(182, 225, 244, 0.5); text-align: left; padding: 5px;
+    font-size: 0.7rem; font-weight: 600;
+    width: 70px; border-radius: 10px;
 }
 
-.upcoming h2 {
-    text-align: left;
-    font-size: 1.2rem;
-}
+.upcoming h2 { text-align: left; font-size: 1.2rem; }
 
 /* DONATE */
 
 .donate {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    text-align: center;
-    font-size: 0.9rem;
-    font-weight: 700;
+    display: flex; flex-direction: column;
+    padding: 15px; text-align: center;
+    font-size: 0.9rem; font-weight: 700;
 }
 
 .donate h3 {
-    margin: 40px;
-    padding: 25px 20px;
-    font-family: unbounded;
-    font-size: 1rem;
-    background-color: rgb(166, 144, 255, 0.5);
-    border-radius: 50px 0;
-
+    margin: 40px; padding: 25px 20px;
+    font-family: unbounded; font-size: 1rem;
+    background-color: rgb(166, 144, 255, 0.5); border-radius: 50px 0;
 }
 
-
-.donate h5 {
-    margin-top: 50px;
-}
-
-.donate img {
-    display: block;
-    max-width: 100%;
-    width: 200px;
-    height: auto;
-    object-fit: cover;
-    margin: 0 auto;
-}
-
-
+.donate h5 { margin-top: 50px; }
+.donate img { width: 200px; }
 .donate-button {
-    cursor: pointer;
-    font-size: 0.85rem;
-    font-weight: 700;
-    font-family:  poppins;
+    cursor: pointer; font-size: 0.85rem; font-weight: 700; font-family:  poppins;
     background-color: rgb(220, 120, 255, 0.4);
-    padding: 10px 45px;
-    border: none;
-    border-radius: 15px;
-    margin: 20px 25px;
+    padding: 10px 45px; margin: 20px 25px;
+    border: none; border-radius: 15px;
 }
 
 .f-support {
-    padding: 10px 5px 10px 5px ;
-    text-align: center;
-    cursor: pointer;
-    font-size: 0.7rem;
-    border-radius: 0  0 20px 20px ;
+    padding: 10px 5px 10px 5px ; text-align: center; cursor: pointer;
+    font-size: 0.7rem; border-radius: 0  0 20px 20px ;
 }
-
 
 @media (min-width: 550px) and (max-width: 2560px)  {
 
-
     .heading-upcoming, .heading-upcoming h1 {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
         text-align: left;
         max-width: 1024px;
+        margin: 0 auto;
     }
 
-    .upcoming {
-        
-        align-items: start;
-    }
-
-
-    .event-invitation img  {
-
-        width: 450px;
-
-    }
-
-    .rob img {
-        width: 450px;
-    }
-
-    .donate {
-        max-width: 900px;
-        margin: 0 auto ;
-    }
+    .upcoming { align-items: start; }
+    .event-invitation img { width: 450px; }
+    .rob img { width: 450px; }
+    .donate { max-width: 900px; margin: 0 auto ; }
 }
 
