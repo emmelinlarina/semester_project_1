@@ -2,11 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
 
 
-/*  Main picture  */
+/* Shared patterns */
 
-.explore img {
-    display: block; width: 100%; height: auto; object-fit: cover;
-    align-items: center; justify-content: center;
+.explore img, .exhibitions img, .rob img, .come-visit img { 
+    display: block; width: 100%; height: auto; object-fit: cover; margin: 0 auto;
+}
+
+.exhibitions img { max-width: 1024px; }
+.rob img { max-width: 450px; }
+.come-visit img { max-width: 100px; }
+
+.info-buttons, 
+.location-icon, 
+.tickets, 
+.come-visit {
+    display: flex; justify-content: center; align-items: center;
 }
 
 /* Explore with us */ 
@@ -16,24 +26,17 @@
     width: 90vw; margin: 0 auto;
 }
 
-
 .explore-wu {
     display: flex; justify-content: center;
     padding: 15px; background-color: #C6D6F4;
     font-size: 0.6rem; width: 100%; border-radius: 0  0 10px 10px ;
 }
 
-.explore-wu h1 {
-    font-family: poppins; font-weight: 600; letter-spacing: 0.25px;
-}
-
+.explore-wu h1 { font-family: poppins; font-weight: 600; letter-spacing: 0.25px; }
 
 /* information buttons */
 
-.info-buttons {
-    display: flex; justify-content: center; align-items: center; gap: 10px;
-    margin: 80px 0; 
-}
+.info-buttons { gap: 10px; margin: 80px 0; }
 
 .openinghours-btn, .events-btn { 
     cursor: pointer; font-size: 0.75rem; letter-spacing: .4px; 
@@ -42,8 +45,7 @@
 }
 
 .openinghours-btn { background-color: rgb(166, 144, 255, 0.5); padding: 40px 30px; margin: 10px; }
-
-.events-btn { background-color: rgb(220, 120, 255, 0.5); padding: 40px 25px; margin: 10px 0 50px; }
+.events-btn       { background-color: rgb(220, 120, 255, 0.5); padding: 40px 25px; margin: 10px 0 50px; }
 
 /* Exhibition: Launchpad to the stars */  
 
@@ -58,10 +60,6 @@
     display: flex; justify-content: center; background-color: #C6D6F4;
     font-size: .9rem; font-family: unbounded; padding: 15px; width: 100%;
 }
-
-/* img */
-
-.exhibitions img { display: block; width: 100%; max-width: 1024px; height: auto; object-fit: cover; margin: 0 auto; }
 
 .exhibitions-txt, .exhibitions h5 {
     width: 100%; display: flex; justify-content: center; text-align: center;
@@ -91,14 +89,7 @@
 
 .rob p { display: flex; justify-content: center; text-align: center; padding: 20px; font-size: 0.9rem; }
 
-/* Rob img */
-
-.rob img { display: block; width: 100%; max-width: 450px; height: auto; object-fit: cover; margin: 0 auto; }
-
-
 /* Rob ticket */
-
-.tickets { display: flex; justify-content: center; align-items: center; }
 
 .tickets-btn {
     cursor: pointer; font-size: 0.9rem; font-weight: 600; font-family: unbounded, poppins;
@@ -126,8 +117,7 @@
 .location-icon { display: flex; justify-content: center; align-items: center; }
 
 .location-btn {
-    padding: 8px 40px; margin: 20px 0 20px 0;
-    cursor: pointer;
+    padding: 8px 40px; margin: 20px 0 20px 0; cursor: pointer;
     font-size: 0.9rem; font-weight: 300;
     background-color: rgb(158, 199, 229, 0.4);
     border: none; border-radius: 15px;
@@ -151,48 +141,25 @@
 .come-visit img { width: 100%; max-width: 100px; height: auto; }
 
 @media (min-width: 320px) and (max-width: 1024px) {
-
-    .explore  { width: 100vw; }  
-
+    .explore  { width: 100vw; } 
 }
 
 /* Tablet - desktop  */ 
 
 @media (min-width: 830px) and (max-width: 1024px) {
-
-    .exhibitions img {  max-width: 1024px; }
-
-  .rob img {  max-width: 500px; }
-
-   .about-us p { padding: 28px; font-size: 0.9rem; border-radius: 10px; }
+    .rob img {  max-width: 500px; }
+    .about-us p { padding: 28px; font-size: 0.9rem; border-radius: 10px; }
 }
 
 /* Laptop - 4k */
 
 @media (min-width: 1024px) and (max-width: 2560px) {
-
-    /* Explore with us */ 
-
-    .explore-wu {
-        margin-top: 50px;
-        padding: 30px;
-        font-size: 0.7rem;
-        width: 55%;
-        border-radius: 5px 40px ;
-    }
-    
+    .explore-wu { margin-top: 50px; padding: 30px; font-size: 0.7rem; width: 55%; border-radius: 5px 40px ; }
     .explore-wu h1 { font-family: unbounded; }
-
-    /* Buttons */ 
-
+    
     .info-buttons { margin: 80px; gap: 80px; }
-    
-
     .openinghours-btn  { font-size: 1.2rem; padding: 60px 50px; }
-    
     .events-btn { font-size: 1.2rem; padding: 55px 35px; }
-
-    /*Exhibitions*/ 
 
     .exhibitions h2 {
         font-size: 1.2rem; font-family: unbounded;
@@ -200,13 +167,11 @@
     }
 
     .exhibitions img {  max-width: 1024px; }
-    
     .exhibitions-txt, .exhibitions h5 { font-size: 1rem; padding: 20px; }
 
     /* Discover button */
     
     .discover { margin-left: 80%; }
-    
     .discover-btn {
         font-size: 0.9rem;
         padding: 5px; margin: 20px;
@@ -223,7 +188,6 @@
     /* About us */ 
 
     .about-us h1 { border-radius: 20px 20px 0  0 ; font-size: 1.5rem; }
-    
     .about-us p {
         width: 500px;
         line-height: 25px;

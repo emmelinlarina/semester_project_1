@@ -241,31 +241,13 @@ form button {
 
 @media (min-width: 1000px) and (max-width: 2560px) {
     
-    footer {
-        
-        padding: 40px 50px 25px; /* change this after */
-        font-size: 0.7rem;
-    }
+    footer { padding: 40px 50px 25px;  font-size: 0.7rem; }
     
-
-    .row {
-        width: 100%;
-        flex-direction: row;
-    }
+    .row { width: 100%; flex-direction: row; }
      
-    .col, .col h5, .col ul li  {
-        font-size: 0.75rem;
-    }
+    .col, .col h5, .col ul li  { font-size: 0.75rem; }
+    .col h3 { font-size: 0.85rem; }
 
-    .col h3 {
-        font-size: 0.85rem;
-    }
-
-
-    form input {
-        width: 90%;
-
-    }
-
- }
+    form input { width: 90%; }
+}
 
