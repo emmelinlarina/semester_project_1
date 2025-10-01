@@ -1,5 +1,7 @@
 # Explorium Science Museum
 
+![Explorium Logo](images\logo\Explorium_colorful_logo.png)
+
 #### Semester Project 1
 
 A colorful and simple responsive website built as my **Semester Project 1** at Noroff.
@@ -14,7 +16,7 @@ The website was designed to:
 
 - Use **responsive design** to adapt across devices (mobile, tablet, desktop).
 - Be accessible (WCAG-checked colors and semantic HTML).
-- Give me hands-on practice with \*_HTML_ and _CSS_, focusing on structure and responsiveness.
+- Give me hands-on practice with **HTML** and **CSS**, focusing on structure and responsiveness.
 
 The project consist of **4 pages**:
 
